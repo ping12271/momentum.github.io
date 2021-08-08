@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    input, button {
+        border: none;
+        background: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    -ms-overflow-style: none;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1280px;
+    height: 100vh;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+#quotes {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.greeting-container {
+    margin-left: 100px;
+
+    #login-form{
+        display: flex;
+        align-items: center;
+
+        &.hidden {
+            display: none;
+        }
+
+        input {
+            min-width: 400px;
+            min-height: 70px;
+            display: block;
+            border-bottom: 2px solid #fffead;
+            font-family: 'Caveat';
+            font-size: 50px;
+            color: #fffead;
+
+            &::placeholder {
+                font-family: 'Caveat';
+                color: #fffead;
+                font-size: 50px;
+            }
+        }
+
+        button {
+            border-radius: 20px;
+            border: 1px solid #fffead;
+            padding: 5px 10px;
+            margin-left: 5px;
+            font-family: 'Caveat';
+            font-size: 20px;
+            color: #fff;
+
+            &:hover {
+                color: #0071fa;
+                background: #fff;
+            }
+        }
+    }
+
+    h1 {
+        font-family: 'Caveat';
+        color: #fffead;
+        font-size: 60px;
+    }
+}
+
+.todo-list-container {
+    flex: 1;
+    margin-left: auto;
+    background: rgba(0,0,0, 0.3);
+    border-radius: 6px;
+    padding: 20px;
+    overflow-y: scroll;
+
+    p {
+        font-family: 'Caveat';
+        color: #fffead;
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+
+    input {
+        border-bottom: 2px solid #ffffff;
+        font-size: 18px;
+        color: #fff;
+
+        &::placeholder {
+            font-family: 'Caveat';
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+
+    li {
+        padding: 10px;
+        span {
+            font-size: 20px;
+        }
+        button {
+            color: #fffead;
+            padding: 10px;
+        }
+    }
+
+}
+
+
+.info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Caveat';
+}
+
+img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
