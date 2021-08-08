@@ -134,8 +134,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
-    font-family: 'Caveat';
+    font-size: 50px;
+
+    #clock {
+        font-family: 'Caveat';
+        font-size: 80px;
+    }
 }
 
 img {
